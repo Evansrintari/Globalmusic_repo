@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "Lesson01",
-    "slug": "Lesson01",
+    "name": "Global-music-app",
+    "slug": "Global-music-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "lesson01",
+    "scheme": "globalmusicapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
