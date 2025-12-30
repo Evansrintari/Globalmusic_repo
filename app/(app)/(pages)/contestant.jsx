@@ -1,17 +1,17 @@
+import { LinearGradient } from 'expo-linear-gradient';
 import { useRouter } from 'expo-router';
-import { Music, Plus, LogOut } from 'lucide-react-native';
-import React, { useState } from 'react';
+import { LogOut, Music, Plus } from 'lucide-react-native';
+import { useState } from 'react';
 import {
+  Animated,
+  FlatList,
   StyleSheet,
   Text,
-  View,
   TouchableOpacity,
-  FlatList,
-  Animated,
+  View,
 } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { useApp } from '../contexts/AppContext';
+import { useApp } from '../../../contexts/AppContext';
 
 export default function ContestantScreen() {
   const router = useRouter();

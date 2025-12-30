@@ -1,20 +1,20 @@
-import { useRouter, useLocalSearchParams } from 'expo-router';
-import { X, Play, Pause, Star } from 'lucide-react-native';
-import React, { useState, useEffect } from 'react';
-import {
-  StyleSheet,
-  Text,
-  View,
-  TouchableOpacity,
-  Alert,
-  TextInput,
-  ScrollView,
-  Animated,
-} from 'react-native';
 import { Audio } from 'expo-av';
 import { LinearGradient } from 'expo-linear-gradient';
+import { useLocalSearchParams, useRouter } from 'expo-router';
+import { Pause, Play, Star, X } from 'lucide-react-native';
+import React, { useEffect, useState } from 'react';
+import {
+  Alert,
+  Animated,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { useApp } from '../contexts/AppContext';
+import { useApp } from '../../../contexts/AppContext';
 
 export default function RateScreen() {
   const router = useRouter();

@@ -1,16 +1,15 @@
+import { LinearGradient } from 'expo-linear-gradient';
 import { useRouter } from 'expo-router';
 import { Award, LogOut, Music } from 'lucide-react-native';
-import React from 'react';
 import {
+  FlatList,
   StyleSheet,
   Text,
-  View,
   TouchableOpacity,
-  FlatList,
+  View,
 } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { useApp } from '../contexts/AppContext';
+import { useApp } from '../../../contexts/AppContext';
 
 export default function JudgeScreen() {
   const router = useRouter();

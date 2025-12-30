@@ -1,17 +1,17 @@
-import { useRouter, useLocalSearchParams } from 'expo-router';
-import { X, UserCheck } from 'lucide-react-native';
-import React, { useState } from 'react';
+import { LinearGradient } from 'expo-linear-gradient';
+import { useLocalSearchParams, useRouter } from 'expo-router';
+import { UserCheck, X } from 'lucide-react-native';
+import { useState } from 'react';
 import {
-  StyleSheet,
-  Text,
-  View,
-  TouchableOpacity,
   Alert,
   ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
 } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { useApp } from '../contexts/AppContext';
+import { useApp } from '../../../contexts/AppContext';
 
 export default function AssignScreen() {
   const router = useRouter();

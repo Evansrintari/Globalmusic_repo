@@ -1,9 +1,10 @@
-import { useRouter } from 'expo-router';
-import { Music, Shield, Award } from 'lucide-react-native';
-import React, { useEffect } from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, Animated } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import { useApp } from '../contexts/AppContext';
+import { useRouter } from 'expo-router';
+import { Award, Music, Shield } from 'lucide-react-native';
+import React, { useEffect } from 'react';
+import { Animated, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { useApp } from '../../../contexts/AppContext';
+
 
 export default function RoleSelectionScreen() {
   const router = useRouter();

@@ -1,17 +1,16 @@
+import { LinearGradient } from 'expo-linear-gradient';
 import { useRouter } from 'expo-router';
-import { Shield, LogOut, UserCheck } from 'lucide-react-native';
-import React from 'react';
+import { LogOut, Shield, UserCheck } from 'lucide-react-native';
 import {
-  StyleSheet,
-  Text,
-  View,
-  TouchableOpacity,
   FlatList,
   ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
 } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { useApp } from '../contexts/AppContext';
+import { useApp } from '../../../contexts/AppContext';
 
 export default function AdminScreen() {
   const router = useRouter();
